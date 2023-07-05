@@ -1,0 +1,261 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    background:black;
+}
+header,.menu{
+    width: 60%;
+    margin:0px auto;
+    text-align: center;
+}
+nav{
+    background: #ffe3b3;
+    overflow: hidden;
+    border: 2px solid #000 ;
+}
+.menu nav ul{
+    list-style: none;
+}
+.menu nav ul li{
+    float: left;
+}
+
+.menu nav ul li a{
+    padding:10px 20px;
+    display:block;
+    color:rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 20px;
+}
+.menu nav ul li a:hover{
+    background: #26798e;
+}
+
+footer{
+    background:#ffe3b3;
+    color:rgb(5, 5, 5);
+    padding:10px;
+    margin: 0px auto;
+    width: 60%;
+}
+
+section {
+    width: 90%;
+
+}
+div.product-card {
+    width: 280px;
+    height: auto;
+    margin: 1%;
+    padding-bottom:1%;
+    padding-top: 1%;
+    background-color: rgb(159, 195, 218);
+    display:inline-block;
+    border: 2px solid #000 ;
+}
+div.product-card:hover{
+    background-color: rgb(247, 247, 248);
+}
+#objetos{
+    text-align: center;
+    width: 70%;
+    height: auto;
+    display: inline-block;
+    margin-left:300px;
+}
+div.product-card .btnAgregado:hover{
+    background-color:#ffe3b3;
+    color: rgb(5, 5, 5);
+}
+form button:hover{
+    background-color: rgb(146, 140, 140);
+    color: rgb(0, 0, 0);
+}
+div.product-card img{
+    width: 70%;
+    height: 250px;
+    object-fit: cover;
+}
+div.product-card .btnAgregado{
+    display:inline-block;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+div.logotipo img{
+    width: 200px;
+    margin-left: 30px;
+    border-radius: 50%;
+}
+div.logotipo{
+    width: 30px;
+    float: left;
+}
+div.titulo{
+    margin-top: 60px;
+    margin-bottom: 10px;
+    border: 2px solid #000 ;
+    width: 100%;
+    background: #ffe3b3;
+}
+div.titulo h1{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: auto;
+    height: auto;
+    color:#080808;
+    font-family: "Times New Roman";
+    text-align:center;
+}
+
+#lista-carrito h3{
+ background-color:#ffe3b3;
+ width:70%;
+ height:auto;
+ padding: 10px;
+ border: 2px solid #000 ;
+ margin-left: 300px;
+ text-align: center;
+ font-size: 23px;
+}
+.menu ul li.carrit{
+    background-color:#636491;
+}
+.menu ul li.carrit :hover{
+    background-color:#8e8fb8;
+}
+.info{
+    background-color: rgb(201, 228, 245);
+    font-size: 20px;
+    border-radius: 20px;
+    border:none;
+}
+.info:hover{
+    background-color: rgb(162, 159, 170);
+}
+p{
+    padding-bottom: 5px;
+}
+.cart{
+    background-color:#6566a5;
+    border: none;
+    width: 127px;
+}
+.carrit{
+    width: 127px;
+    text-align: center;
+}
+.body{
+    background-color: #5aa5b8;
+    font-family: 'Montserrat', sans-serif;
+    min-height: 100vh;
+}
+
+.contenedor {
+	max-width: 1200px;
+	width: 80%;
+    height: 700px;
+	margin: auto;
+}
+
+/* --- --- CAROUSEL --- --- */
+.carousel__contenedor {
+	position: relative;
+    width: 100%;
+    border: 2px solid #000;
+}
+.carousel__lista .carousel__elemento img{
+    width: 40%;
+    height: 450px;
+    object-fit: cover;
+    padding-top: 20px;
+}
+.carousel__anterior,
+.carousel__siguiente {
+	position: absolute;
+	display: block;
+	width: 30px;
+	height: 30px;
+	border: none;
+	top: calc(50% - 35px);
+	cursor: pointer;
+	line-height: 30px;
+	text-align: center;
+	background:#000;
+	color: #fff;
+	opacity: 20%;
+}
+
+.carousel__anterior:hover,
+.carousel__siguiente:hover {
+	opacity: 100%;
+}
+
+.carousel__anterior {
+	left: -30px;
+}
+
+.carousel__siguiente {
+	right: -30px;
+}
+
+.carousel__lista {
+	overflow: hidden;
+}
+
+.carousel__elemento {
+	text-align: center;
+    background: #cfd1e6;
+}
+
+.carousel__indicadores .glider-dot {
+	display: block;
+	width: 30px;
+	height: 4px;
+	background: #fff;
+	opacity: .2;
+	border-radius: 2;
+}
+
+.carousel__indicadores .glider-dot:hover {
+	opacity: .5;
+}
+
+.carousel__indicadores .glider-dot.active {
+	opacity: 1;
+}
+
+@media screen and (max-width: 800px) {
+	body {
+		padding: 40px 0;
+	}
+
+	.contenido-principal {
+		flex-direction: column;
+	}
+
+	.contenido-principal > * {
+		width: 100%;
+	}
+}
+
+.contenedor p{
+    font-size: 30px;
+    font-weight: 1000;
+    font-style:italic;
+    color: rgb(0, 0, 0);
+}
+.ofert p{
+    text-align: center;
+}
+.contenedor .precio_act{
+    font-size: 20px;
+    text-align: right;
+    margin: 5px;
+    
+}
+.contenedor .precio_ant{
+    font-size: 15px;
+    text-align: right;
+    margin: 5px;
+}
